@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header class="header">
+            <h1 id="title" class="text-center">
+                Yoga Survey Form
+            </h1>
+            <p id="description" class="description text-center">
+                Please fill up the below survey form to help us provide better services. 
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">
+                    Name
+                </label>
+                <input 
+                type="text"
+                name="name"
+                id="name" 
+                class="form-control"
+                placeholder="Enter your name"
+                required
+                />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">
+                    Email
+                </label>
+                <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your email"
+                required
+                />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">
+                    Age
+                </label>
+                <input
+                type="number"
+                name="number"
+                id="number"
+                class="form-control"
+                placeholder="Age"
+                min="5"
+                max="99"
+                required
+                />
+            </div>
+            <div class="form-group">
+                <p>
+                    How frequently do you practise Meditation?
+                </p>
+                <select id="dropdown" name="frequency" class="form-control" required>
+                    <option disabled selected value>Select frequency</option>
+                    <option value="daily">Daily</option>
+                    <option value="often">Often</option>
+                    <option value="never">Never</option>
+                  </select>
+            </div>
+            <div class="form-group">
+                <p>
+                    What categories of Yoga are you familiar with?
+                    <span class="clue">(Select all that apply)
+                    </span>
+                </p>
+                <label>
+                    <input
+                    name="category"
+                    type="checkbox"
+                    value="hatha"
+                    class="input-checkbox"
+                    />Hatha Yoga
+                </label>
+                <label>
+                    <input
+                    name="category"
+                    type="checkbox"
+                    value="vinyasa"
+                    class="input-checkbox"
+                    />Vinyasa Yoga
+                </label>
+                <label>
+                    <input
+                    name="category"
+                    type="checkbox"
+                    value="iyengar"
+                    class="input-checkbox"
+                    />Iyengar Yoga
+                </label>
+                <label>
+                    <input
+                    name="category"
+                    type="checkbox"
+                    value="ashtanga"
+                    class="input-checkbox"
+                    />Ashtanga Yoga
+                </label>
+                <label>
+                    <input
+                    name="category"
+                    type="checkbox"
+                    value="suryanamaskar"
+                    class="input-checkbox"
+                    />Suryanamaskar
+                </label>
+            </div>
+            <div class="form-group">
+                <p>
+                    Where do you live?
+                </p>
+                <label>
+                    <input
+                    name="residence"
+                    type="radio"
+                    value="pune"
+                    class="input-radio"
+                    />
+                    Pune
+                </label>
+                <label>
+                    <input
+                    name="residence"
+                    type="radio"
+                    value="mumbai"
+                    class="input-radio"
+                    />
+                    Mumbai
+                </label>
+                <label>
+                    <input
+                    name="residence"
+                    type="radio"
+                    value="bengaluru"
+                    class="input-radio"
+                    />
+                    Bengaluru
+                </label>
+                <label>
+                    <input
+                    name="residence"
+                    type="radio"
+                    value="delhi"
+                    class="input-radio"
+                    />
+                    Delhi
+                </label>
+                <label>
+                    <input
+                    name="residence"
+                    type="radio"
+                    value="elsewhere"
+                    class="input-radio"
+                    />
+                    Elsewhere
+                </label>
+            </div>
+            <div class="form-group">
+                <p>What do you think of Yoga and how were you introduced to it?</p>
+                <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Type here..."
+                ></textarea>
+            </div>
+            <div class="form-group">
+                <button
+                type="submit"
+                id="submit"
+                class="submit-button"
+                >
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>    
+</body>
+</html>
+<link rel="stylesheet" href="style.css">
